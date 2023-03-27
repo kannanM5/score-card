@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="container">
       <div>
-        <h1 style={{ textAlign: "center", margin: "20px" }}>Score Board</h1>
+        <h2 style={{ textAlign: "center", margin: "20px" }}>Score Board</h2>
         <div>
           <table className="table table-bordered table-hover text-center table-condensed">
             <thead>
