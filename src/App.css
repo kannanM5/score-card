@@ -1,10 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-
   font-family: Arial, Helvetica, sans-serif;
 }
-table {
+/* table {
   border: 1px solid black;
   border-collapse: collapse;
   margin: 10px;
@@ -15,40 +14,33 @@ td {
   border: 1px solid black;
   text-align: center;
   padding: 6px;
+} */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-button {
-  margin: 10px;
-  background-color: rgb(53, 55, 53);
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 10px;
+.btn {
+  margin-right: 20px;
 }
-button:hover {
+/* button:hover {
   background-color: rgb(246, 67, 67);
   color: black;
-}
-
+} */
 th {
   background-color: rgb(189, 189, 252);
   text-transform: uppercase;
+  font-size: 19px;
 }
 td {
   background-color: #d5f2fa;
+  font-size: 17px;
 }
 body {
-  background: linear-gradient(rgb(249, 165, 165), grey);
   background-repeat: no-repeat;
   height: 900px;
 }
-.table {
-  display: flex;
-  justify-content: center;
-}
-.btn {
-  display: flex;
-  justify-content: center;
-}
+
 @media (max-width: 500px) and (min-width: 300px) {
   .btn {
     display: flex;
