@@ -83,7 +83,7 @@ function App() {
         </button>
       </div>
 
-      <h2 style={{ textAlign: "center", margin: "20px" }}>
+      <h3 style={{ textAlign: "center", margin: "20px" }}>
         Total Score ={" "}
         {arr.team[0].score +
           arr.team[1].score +
@@ -96,8 +96,8 @@ function App() {
           arr.team[8].score +
           arr.team[9].score +
           arr.team[10].score}
-      </h2>
-      <h2 style={{ textAlign: "center", margin: "20px" }}>Wicket = {wicket}</h2>
+      </h3>
+      <h3 style={{ textAlign: "center", margin: "20px" }}>Wicket = {wicket}</h3>
     </div>
   );
 }

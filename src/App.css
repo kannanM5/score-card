@@ -3,18 +3,7 @@
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* table {
-  border: 1px solid black;
-  border-collapse: collapse;
-  margin: 10px;
-  width: 400px;
-}
-th,
-td {
-  border: 1px solid black;
-  text-align: center;
-  padding: 6px;
-} */
+
 .button {
   display: flex;
   justify-content: center;
@@ -23,10 +12,7 @@ td {
 .btn {
   margin-right: 20px;
 }
-/* button:hover {
-  background-color: rgb(246, 67, 67);
-  color: black;
-} */
+
 th {
   background-color: rgb(189, 189, 252);
   text-transform: uppercase;
@@ -37,19 +23,5 @@ td {
   font-size: 17px;
 }
 body {
-  background-repeat: no-repeat;
-  height: 900px;
-}
-
-@media (max-width: 500px) and (min-width: 300px) {
-  .btn {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 500px) and (min-width: 300px) {
-  .btn {
-    display: flex;
-    flex-direction: column;
-  }
+  height: 96vh;
 }
