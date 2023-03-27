@@ -39,7 +39,7 @@ td {
 body {
   background: linear-gradient(rgb(233, 14, 14), grey);
   background-repeat: no-repeat;
-  height: 900px;
+  height: 100vh;
 }
 .table {
   display: flex;
