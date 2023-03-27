@@ -82,22 +82,29 @@ function App() {
           out
         </button>
       </div>
-
-      <h3 style={{ textAlign: "center", margin: "20px" }}>
-        Total Score ={" "}
-        {arr.team[0].score +
-          arr.team[1].score +
-          arr.team[2].score +
-          arr.team[3].score +
-          arr.team[4].score +
-          arr.team[5].score +
-          arr.team[6].score +
-          arr.team[7].score +
-          arr.team[8].score +
-          arr.team[9].score +
-          arr.team[10].score}
-      </h3>
-      <h3 style={{ textAlign: "center", margin: "20px" }}>Wicket = {wicket}</h3>
+      <div className="bottom">
+        <div>
+          <h4 style={{ textAlign: "center", margin: "20px" }}>
+            Total Score =
+            {arr.team[0].score +
+              arr.team[1].score +
+              arr.team[2].score +
+              arr.team[3].score +
+              arr.team[4].score +
+              arr.team[5].score +
+              arr.team[6].score +
+              arr.team[7].score +
+              arr.team[8].score +
+              arr.team[9].score +
+              arr.team[10].score}
+          </h4>
+        </div>
+        <div>
+          <h4 style={{ textAlign: "center", margin: "20px" }}>
+            Wicket = {wicket}
+          </h4>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,3 +1,7 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 .button {
   display: flex;
   justify-content: center;
@@ -18,4 +22,8 @@ td {
 }
 body {
   height: 90vh;
+}
+.bottom {
+  display: flex;
+  justify-content: center;
 }
