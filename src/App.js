@@ -32,7 +32,7 @@ function App() {
         <h2 style={{ textAlign: "center", margin: "20px" }}>Score Board</h2>
         <div>
           <table className="table table-bordered table-hover text-center table-condensed">
-            <thead>
+            <thead className="bg-secondary">
               <tr>
                 <th>Players</th>
                 <th>Score</th>
@@ -78,7 +78,7 @@ function App() {
         >
           add6
         </button>
-        <button className="btn btn-primary" onClick={newWicket}>
+        <button className="btn btn-dark" onClick={newWicket}>
           out
         </button>
       </div>
