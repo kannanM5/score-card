@@ -37,9 +37,9 @@ td {
   background-color: #d5f2fa;
 }
 body {
-  background: linear-gradient(rgb(233, 14, 14), grey);
+  background: linear-gradient(rgb(249, 165, 165), grey);
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 900px;
 }
 .table {
   display: flex;
