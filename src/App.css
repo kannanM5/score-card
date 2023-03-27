@@ -35,10 +35,9 @@ th {
 }
 td {
   background-color: #d5f2fa;
-
 }
 body {
-  background: linear-gradient(rgb(251, 225, 225), grey);
+  background: linear-gradient(rgb(233, 14, 14), grey);
   background-repeat: no-repeat;
   height: 900px;
 }
@@ -50,18 +49,15 @@ body {
   display: flex;
   justify-content: center;
 }
-@media (max-width : 500px) and (min-width: 300px) {
-  .btn{
-   display: flex;
-   flex-direction: column;
+@media (max-width: 500px) and (min-width: 300px) {
+  .btn {
+    display: flex;
+    flex-direction: column;
   }
 }
-@media (max-width : 500px) and (min-width: 300px) {
-  .btn{
-   display: flex;
-   flex-direction: column;
+@media (max-width: 500px) and (min-width: 300px) {
+  .btn {
+    display: flex;
+    flex-direction: column;
   }
-
 }
-
-
