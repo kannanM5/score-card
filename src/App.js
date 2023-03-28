@@ -55,30 +55,30 @@ function App() {
       </div>
       <div className="button">
         <button
-          className="btn btn-primary "
+          className="btn btn-primary btn-sm"
           onClick={() => dispatch(increment_one(myId))}
         >
           add1
         </button>
         <button
-          className="btn btn-primary  "
+          className="btn btn-primary btn-sm"
           onClick={() => dispatch(increment_two(myId))}
         >
           add2
         </button>
         <button
-          className="btn btn-primary "
+          className="btn btn-primary btn-sm"
           onClick={() => dispatch(increment_four(myId))}
         >
           add4
         </button>
         <button
-          className="btn btn-primary "
+          className="btn btn-primary btn-sm"
           onClick={() => dispatch(increment_six(myId))}
         >
           add6
         </button>
-        <button className="btn btn-dark" onClick={newWicket}>
+        <button className="btn btn-dark btn-sm" onClick={newWicket}>
           out
         </button>
       </div>
