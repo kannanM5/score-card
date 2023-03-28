@@ -7,14 +7,17 @@ import {
   increment_six,
   out,
 } from "./redux/action";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const arr = useSelector((state) => state);
   const [myId, setMyId] = useState(1);
   const [wicket, setWicket] = useState(0);
-
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    document.title = "scoreBoard";
+  });
 
   const newWicket = () => {
     dispatch(out(myId));
@@ -23,6 +26,9 @@ function App() {
       if (arr.team[i].id === myId) {
         setWicket(wicket + 1);
       }
+    }
+    if (wicket === 11) {
+      alert("Match over...reload to play again");
     }
   };
 
