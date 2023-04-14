@@ -15,6 +15,18 @@ function App() {
   const [wicket, setWicket] = useState(0);
   const dispatch = useDispatch();
 
+  const outTheme = {
+    backgroundColor: "red",
+    color: "white",
+    padding: "2px 4px",
+    borderRadius: "5px",
+  };
+  const notOutTheme = {
+    backgroundColor: "wheat",
+    color: "black",
+    padding: "2px 4px",
+    borderRadius: "5px",
+  };
   useEffect(() => {
     document.title = "scoreBoard";
   });
@@ -28,16 +40,16 @@ function App() {
       }
     }
     if (wicket === 11) {
-      alert("Match over...reload to play again");
+      alert(`Match over... Reload to play again`);
     }
   };
 
   return (
     <div className="container">
       <div>
-        <h2 style={{ textAlign: "center", margin: "20px" }}>Score Board</h2>
+        <h2>Score Board</h2>
         <div>
-          <table className="table table-bordered table-hover text-center table-condensed">
+          <table className="table table-bordered table-hover text-center">
             <thead className="bg-secondary">
               <tr>
                 <th>Players</th>
@@ -50,8 +62,19 @@ function App() {
                 return (
                   <tr key={i}>
                     <td>{e.player}</td>
-                    <td>{e.score}</td>
-                    <td>{e.wicket}</td>
+                    <td className="scoreData">
+                      <span className="score">
+                        {e.score < 10 ? "0" + e.score : e.score}
+                      </span>
+                    </td>
+                    <td>
+                      <span
+                        className="wicket"
+                        style={e.wicket == "Not Out" ? notOutTheme : outTheme}
+                      >
+                        {e.wicket}
+                      </span>
+                    </td>
                   </tr>
                 );
               })}
@@ -90,25 +113,17 @@ function App() {
       </div>
       <div className="bottom">
         <div>
-          <h4 style={{ textAlign: "center", margin: "20px" }}>
-            Total Score =
-            {arr.team[0].score +
-              arr.team[1].score +
-              arr.team[2].score +
-              arr.team[3].score +
-              arr.team[4].score +
-              arr.team[5].score +
-              arr.team[6].score +
-              arr.team[7].score +
-              arr.team[8].score +
-              arr.team[9].score +
-              arr.team[10].score}
-          </h4>
+          <div>
+            <h4>
+              Total Score =
+              {arr.team.reduce((acc, cur) => {
+                return acc + cur.score;
+              }, 0)}
+            </h4>
+          </div>
         </div>
         <div>
-          <h4 style={{ textAlign: "center", margin: "20px" }}>
-            Wicket = {wicket}
-          </h4>
+          <h4>Wicket = {wicket}</h4>
         </div>
       </div>
     </div>

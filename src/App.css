@@ -30,3 +30,15 @@ body {
   text-shadow: 2px 1px 2px black;
   letter-spacing: 2px;
 }
+.score {
+  background-color: rgb(138, 122, 232);
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+h4,
+h2 {
+  font-weight: bolder;
+  margin: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
